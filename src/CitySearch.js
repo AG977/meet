@@ -22,6 +22,8 @@ handleItemClicked = (suggestion) => {
   this.setState({
     query: suggestion
   });
+  this.props.updateEvents(suggestion);
+
 }
 
   render() {
@@ -40,7 +42,7 @@ handleItemClicked = (suggestion) => {
               onClick={() => this.handleItemClicked(suggestion)}
             >{suggestion}</li>
           ))}
-          <li>
+          <li onClick={() => this.handleItemClicked("all")}>
             <b>See all cities</b>
           </li>
          </ul>
