@@ -91,7 +91,7 @@ const removeQuery = () => {
 const getToken = async (code) => {
   const encodeCode = encodeURIComponent(code);
   const { access_token } = await fetch(
-    'https://8scveetdph.execute-api.eu-central-1.amazonaws.com/dev/api/token/' + '/' + encodeCode
+    'https://8scveetdph.execute-api.eu-central-1.amazonaws.com/dev/api/token/'+ encodeCode
   )
     .then((res) => {
       return res.json();
