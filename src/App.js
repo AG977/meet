@@ -14,7 +14,7 @@ class App extends Component {
   state = {
     events: [],
     locations: [],
-    currentLocation: "Everywhere",
+    currentLocation: "All",
     numberOfEvents: 32,
   };
 
@@ -33,7 +33,7 @@ class App extends Component {
 
   updateEvents = (location) => {
   getEvents().then((events) => {
-    const locationEvents = (location === 'Everywhere') ?
+    const locationEvents = (location === 'All') ?
     events :
     events.filter((event) => event.location === location);
     this.setState({

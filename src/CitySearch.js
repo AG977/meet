@@ -45,7 +45,7 @@ handleItemClicked = (suggestion) => {
               onClick={() => this.handleItemClicked(suggestion)}
             >{suggestion}</li>
           ))}
-          <li onClick={() => this.handleItemClicked("Everywhere")}>
+          <li onClick={() => this.handleItemClicked("All")}>
             <b>See all cities</b>
           </li>
          </ul>
