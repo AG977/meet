@@ -44,6 +44,14 @@ p {
 color: #daa520;
 }
 
+h1 {
+  padding: 25px 10px;
+}
+
+h4 {
+  padding: 10px 0px 0px 0px;
+}
+
 .div.event{
   padding: 15px 5px;
 }
@@ -62,6 +70,10 @@ input[type="number"] {
   line-height: 20px;
   align-self: center;
   height: 38px;
+}
+
+.input.events_number__input my-3 {
+  padding: 8px 6px 8px 10px;
 }
 
 .events_number__input {

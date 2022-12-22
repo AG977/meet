@@ -90,8 +90,8 @@ getData = () => {
       <CitySearch locations={this.state.locations} updateEvents={this.updateEvents} />
       <h4>How many events would you like to see on this page?</h4>
       <NumberOfEvents updateNumberOfEvents={this.updateNumberOfEvents} updateEvents={() => this.updateEvents()} />
-      <h4>Events by genre</h4>
       <div className="data-vis-wrapper">
+      <h4>Events by genre</h4>
       <EventGenre events={events} />
       <h4>Events in each city</h4>
       <ResponsiveContainer height={400} >
@@ -100,10 +100,11 @@ getData = () => {
       <XAxis type="category" dataKey="city" name="city" />
       <YAxis type="number" dataKey="number" name="number of events" allowDecimals={false} />
       <Tooltip cursor={{ strokeDasharray: '3 3' }} />
-      <Scatter data={this.getData()} fill="#8884d8" />
+      <Scatter data={this.getData()} fill="#daa520" />
       </ScatterChart>
       </ResponsiveContainer>
       </div>
+      <h4>List of events:</h4>
       <EventList events={this.state.events} />
       <WelcomeScreen showWelcomeScreen={this.state.showWelcomeScreen}
         getAccessToken={() => { getAccessToken() }} />
