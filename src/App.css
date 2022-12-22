@@ -42,7 +42,8 @@ h3,
 h4,
 h5,
 p,
-b {
+b,
+li {
 color: #daa520;
 }
 
@@ -81,7 +82,7 @@ input[type="number"] {
 
 .input.events_number__input my-3 {
   padding: 8px 6px 8px 10px;
-  margin: 0%;
+  margin: none;
 }
 
 .events_number__input {
