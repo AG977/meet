@@ -104,7 +104,7 @@ getData = () => {
       </ScatterChart>
       </ResponsiveContainer>
       </div>
-      <h4>List of events:</h4>
+      <h5>List of events:</h5>
       <EventList events={this.state.events} />
       <WelcomeScreen showWelcomeScreen={this.state.showWelcomeScreen}
         getAccessToken={() => { getAccessToken() }} />

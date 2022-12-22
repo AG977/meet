@@ -40,7 +40,9 @@ h1,
 h2,
 h3,
 h4,
-p {
+h5,
+p,
+b {
 color: #daa520;
 }
 
@@ -50,6 +52,11 @@ h1 {
 
 h4 {
   padding: 10px 0px 0px 0px;
+}
+
+h5 {
+  font-size: large;
+  padding: 20px 10px;
 }
 
 .div.event{
@@ -74,6 +81,7 @@ input[type="number"] {
 
 .input.events_number__input my-3 {
   padding: 8px 6px 8px 10px;
+  margin: 0%;
 }
 
 .events_number__input {
