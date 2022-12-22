@@ -31,12 +31,20 @@ li,
   list-style: none;
 }
 
-div.App{
+.div.App{
   background: #000;
   color: #daa520;
 }
 
-div.event{
+h1, 
+h2,
+h3,
+h4,
+p {
+color: #daa520;
+}
+
+.div.event{
   padding: 15px 5px;
 }
 
