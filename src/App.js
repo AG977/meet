@@ -88,10 +88,12 @@ getData = () => {
       {!navigator.onLine && <OfflineAlert text={'You are currently offline, data may not be updated.'}/>}
       <h4>Choose your nearest city</h4>
       <CitySearch locations={this.state.locations} updateEvents={this.updateEvents} />
+      <h4>How many events would you like to see on this page?</h4>
       <NumberOfEvents updateNumberOfEvents={this.updateNumberOfEvents} updateEvents={() => this.updateEvents()} />
-      <h4>Events in each city</h4>
+      <h4>Events by genre</h4>
       <div className="data-vis-wrapper">
       <EventGenre events={events} />
+      <h4>Events in each city</h4>
       <ResponsiveContainer height={400} >
       <ScatterChart margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
       <CartesianGrid />

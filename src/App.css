@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+
+
 .App {
   text-align: center;
 }
@@ -7,25 +10,75 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: #000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #daa520;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 8px 6px 8px 10px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #FFF;
+  font-size: 14px;
+  line-height: 20px;
+  align-self: center;
+  height: 38px;
+}
+
+.events_number__input {
+  width: 200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.EventList{
+  marker: none;
+}
+
+#button {
+  display: inline-block;
+  background-color: #daa520;
+  color: #000;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 2px;
+  padding: 5px 15px;
+}
+
+#button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.data-vis-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 0% 5%;
+}
+
+.data-vis-wrapper .recharts-responsive-container {
+  min-width: 100%;
+  display: flex;
+}
+
+.recharts-surface {
+  overflow: visible;
 }
 
 @keyframes App-logo-spin {
@@ -38,20 +91,22 @@
   }
 }
 
-input[type="text"],
-input[type="number"] {
-  padding: 8px 6px 8px 10px;
-  border-radius: 4px;
-  outline: none;
-  border: 1px solid #ccc;
-  font-size: 14px;
-  line-height: 20px;
-  align-self: center;
-  height: 38px;
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.events_number__input {
-  width: 200px;
-  margin: 20px auto;
-  text-align: center;
+@media only screen and (min-width: 992px) {
+  .data-vis-wrapper {
+    flex-direction: row;
+  }
+
+  .data-vis-wrapper .recharts-responsive-container {
+    flex-basis: 50%;
+    max-width: 50%;
+    min-width: auto;
+    margin: 0 auto;
+  }
 }

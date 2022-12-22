@@ -24,7 +24,7 @@ class NumberOfEvents extends Component {
 
   render() {
     return (
-      <div className="numberOfEvents text-muted">How many events would you like to see on this page?
+      <div className="numberOfEvents text-muted">
         <input
           className="events_number__input my-3"
           type="number"
